@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    
     <meta charset="utf-8"/>
     <title>CSS를 일렬로 나열하기</title>
+    
     <style type="text/css">
          /* 기본 설정*/
          a{text-decoration:none; color:#000000;}         
@@ -13,15 +15,14 @@
          nav ul li {
             display:inline;                         /*  세로나열을 가로나열로 변경 */
             border-left:1px solid #999;             /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
-
- 
-
             font:bold 12px Dotum;                     /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
-            padding:0 10px;                         /* 각 메뉴 간격 */
+            padding:0 10px;                           /* 각 메뉴 간격 */
+            text-align: left ;
         }
          nav ul li:first-child{border-left:none;}     /* 메뉴 분류중 제일 왼쪽의 "|"는 삭제       
     </style>
 </head>
+    
 <body>   
     <nav>
         <ul>
@@ -34,5 +35,3 @@
     </nav>   
 </body>
 </html>
-
-출처: https://jos39.tistory.com/166# [JOS39 블로그]
