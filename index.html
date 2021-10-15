@@ -1,31 +1,38 @@
-<style>
-* { margin:0; padding:0; }
-ul { line-style:none; }
-nav { width:320px; height: 35px; background-color:#444; border-radius: 5px; margin:5px 0px 0px 0px; padding:0 0px 0px 0px; }
-nav li { display:inline; }
-nav li a { float: left; margin-right:5px; padding: 0px 20px; line-height:35px; }
-nav li a:hover { color:#fff; }
-nav ul ul { position:absolute; opt:25px; width:100px; border:1px solid #ccc; border-top:none; }
-nav ul li:hover > ul { display: block; }
-nav ul ul li a { width:100px; padding:10px 20px; line-height:1.4em; }
-nav ul ul li a:hover { background: #444;}
-a.nav_a { color:#33ccff; }
-.clear { clear:both; }
-</style>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <title>CSS를 일렬로 나열하기</title>
+    <style type="text/css">
+         /* 기본 설정*/
+         a{text-decoration:none; color:#000000;}         
+         a:hover{color:#ff0000;}                    
+         
+         /* nav tag */
+         nav ul{padding-top:10px;}                     /*  상단 여백 10px  */
+         nav ul li {
+            display:inline;                         /*  세로나열을 가로나열로 변경 */
+            border-left:1px solid #999;             /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
 
-<center>
-<nav>
-  <ul>
-    <li><a href="/v3m/" class="nav_a">HOME</a></li>
-    <li><a href="/bbs/board.php?bo_table=sub1_01" class="nav_a">회사소개</a></li>
+ 
+
+            font:bold 12px Dotum;                     /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+            padding:0 10px;                         /* 각 메뉴 간격 */
+        }
+         nav ul li:first-child{border-left:none;}     /* 메뉴 분류중 제일 왼쪽의 "|"는 삭제       
+    </style>
+</head>
+<body>   
+    <nav>
         <ul>
-            <li><a href="/bbs/board.php?bo_table=sub1_01" class="nav_a">인사말</a></li>
-            <li><a href="/bbs/board.php?bo_table=sub1_02" class="nav_a">회사연혁</a></li>
-            <li><a href="/bbs/board.php?bo_table=sub1_03" class="nav_a">비전</a></li>
-            <li><a href="/bbs/board.php?bo_table=sub1_04" class="nav_a">CI/Bi</a></li>
-            <li><a href="/v3m/sub1_05.php" class="nav_a">오시는길</a></li>
-        </ul>
-    <li><a href="/bbs/board.php?bo_table=sub1_01" class="nav_a">메뉴3</a></li>
-  </ul>
-</nav>
-</center>
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+            <li><a href="#">MENU5</a></li>
+        </ul>   
+    </nav>   
+</body>
+</html>
+
+출처: https://jos39.tistory.com/166# [JOS39 블로그]
