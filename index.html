@@ -23,7 +23,7 @@
              width : 13000px;
             
         }
-       aside{
+       #aside{
         border-right:1px solid black;
         width:200px;
         font-size:15px;
@@ -32,18 +32,17 @@
           
         }
         
-      aside ul{
+      #aside ul{
           list-style:none;
           height:100px;
        
         
         }
       
-      main{
-  display: inline-block;
-       }
-        
-      
+    #main{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      }
         
     </style>
 </head>
@@ -67,9 +66,10 @@
         </ul>   
     </nav> 
    
-     <aside>
+     <div id="main">
+       
+   <div id="aside">
        <ul>
-         
         <li>전성훈</li>
         <li>키:175cm</li>
         <li>몸무게:69kg</li>
@@ -78,19 +78,13 @@
         <li>군복무:D-70</li>
         <li>MBTI:ENFP</li>
          </ul>
-    </aside>
+  </div>
     
-  <main>
-  2021.10.22 (금) <br>
-      오늘은 백신을 맞아서 인지 오전부터 석식을 먹을때까지 힘이 없어 골골됐다. <br>
-      다들 훈련준비를 하시는데 혼자 누워있어서 살짝 눈치가 보였긴한데 힘이 없어서 그냥 별 생각없이 누워있었다. <br>
-      사수이신 배병장님이 이제 곧 전역이셔서 기념으로 지원과에서 맘스터치에 피자를 먹었는데 너무 맛있었다. 이게 사회의 맛인가 싶었다. 나야 뭐 짬찌라 별 생각없이 먹기만 했는데
-      왠지 모르게 분위기가 묘했다. 이 설명 할 수 없는 아리송한 분위기란 무엇이었을까, <br>
-      그건 모르겠고 그냥 피자랑 햄버거가 맛있었다. 먹고나니 몸이 한결 가벼워지고 몸이 많이 나아져서 점점 활기를 되찾았다.<br>
-      점호시간에 김상엽 병장님이 제로투를 추시는 모습을 보고 살짝 쇼크를 받긴했었는데 그것보다 꿈에 나올까 두려운 마음이 크다 <br>
-      몸이 괜찮아졌으니 연등도 하러 왔고 내일 헬스장이나 갈까 고민중이었을 찰나 배병장님 가시는 기념으로 낮에 롤 5ㄷ5를 연다는 소식을 듣고 내일 할일이 생겼다 <br>
-      
-  </main>
+ <div id="concents">
+  2021.10.22 (금)
+ </div>
+       
+  </div>
    
     
    <footer>
