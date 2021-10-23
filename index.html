@@ -4,7 +4,10 @@
     <title>성훈</title>
     
     <style>
-        
+      #frame{
+        border: 1px solid black;
+        margin: 0 auto;
+      }
       header{
     
       }
@@ -15,7 +18,7 @@
       a{
         color:black;
       }
-         nav ul{
+     nav ul{
            background:#dcdcdc;
              padding-top:10px; 
              text-align: right ;
@@ -32,12 +35,12 @@
            
             
         }
-       #aside{
+       /* #aside{
         border-right:1px solid black;
         width:190px;
         font-size:15px;
         height:1000px;
-         display: inline-block;
+         display: inline-block; */
           
         }
         
@@ -50,7 +53,7 @@
       
     #main{
       display: grid;
-      grid-template-columns: 210px 1fr;
+     /*  grid-template-columns: 210px 1fr; */ 
      
       
       }
@@ -58,9 +61,7 @@
       #concents{
         text-align : center;
         
-        @media(max-width:800px) {
-          #aside{
-          display:none;
+      
         }
       }
         
@@ -70,7 +71,7 @@
 </head>
     
 <body>   
-    
+    <div id = "frame">
     <header>        
       
     <h2><a href="index.html">20살 성훈</a></h2>
@@ -94,9 +95,9 @@
    
      <div id="main">
        
-   <div id="aside">
+   <!--<div id="aside">
   
-       <ul>
+      <ul>
             <기본정보> <br><br>
        <li>전성훈</li>
        <li>키:175cm</li>
@@ -109,13 +110,13 @@
        <li>군보직:군수 행정병</li>
        <li>MBTI:ENFP</li>
          </ul>
-  </div>
+  </div> -->
     
  <div id="concents">
    <h3>Intro</h3>
   전성훈이라는 사람에 대해 소개하는 사이트<br>
   꾸밈없이 있는 그대로를 적어나간다<br>
- 20살이라는 어리디 어린 나이, 난 이런 생각을 가지고 있었구나  <br><br>
+   <br><br>
    .<br>
    .<br>
     .<br>
@@ -124,6 +125,8 @@
    <br>
    <br>
    
+    <a href="생각.html"> <기본정보> </a> <br>
+      
  <a href="생각.html"> <현재 생각 중인 주제들> </a>
      
      
@@ -134,6 +137,6 @@
    
     
    <footer>
-     연락처 : 01029224997
+ 
    </footer>
  
